@@ -1,9 +1,3 @@
-
-Vue.component('navigation-link', {
-    props: ['name'],
-    template: `<a :href="'#'" class="nav-link">{{ name }}</a>`
-});
-
 new Vue({
     el: '#app',
     data: {
@@ -48,7 +42,7 @@ new Vue({
         hideProfile() {
             this.showProfileBox = false;
         },
-        closeProfile() {
+        closeProfile(){
             this.showProfileBox = false;
         }
     }
